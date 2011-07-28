@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+# $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+require 'rubygems'
+require 'MINT-core'
+require 'MINT-sdl/sound'
+
+include MINT
+
+s = SoundAgent.new
+
+mapping_external_focus_click = ExecuteOnStateChange.new(AIO,"focused",s.method(:play_click))
+s.addMapping(mapping_external_focus_click)
+mapping_external_select = ExecuteOnStateChange.new(HandGesture,"selected",s.method(:play_click2))
+s.addMapping(mapping_external_select)
+mapping_external_confirm = ExecuteOnStateChange.new(HandGesture,"confirmed",s.method(:play_plop))
+s.addMapping(mapping_external_confirm)
+
+
+#drag and drop gestures
+mapping_external_selected = ExecuteOnStateChange.new(GestureButton,"released",s.method(:play_click2))
+s.addMapping(mapping_external_selected)
+mapping_external_pressed = ExecuteOnStateChange.new(GestureButton,"pressed",s.method(:play_plop))
+s.addMapping(mapping_external_pressed)
+
+
+#mapping_external_select = ExecuteOnStateChange.new(AIINChoose,"chosen",s.method(:play_click2))
+#s.addMapping(mapping_external_select)
+#mapping_external_narrowing = ExecuteOnStateChange.new(HandGesture,"narrowing",s.method(:play_windup))
+#s.addMapping(mapping_external_narrowing)
+#mapping_external_widening = ExecuteOnStateChange.new(HandGesture,"widening",s.method(:play_windup))
+#s.addMapping(mapping_external_widening)
+s.run
