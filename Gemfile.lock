@@ -1,0 +1,46 @@
+GIT
+  remote: ssh://git@multi-access.de/MINT-core.git
+  revision: f838ac5c55194f94bda0982cc55d7045b34e2735
+  branch: head_movements
+  specs:
+    MINT-core (0.0.1)
+      MINT-statemachine (~> 1.2.2)
+      cassowary (~> 1.0.0)
+      dm-rinda-adapter (~> 0.1.0)
+
+GIT
+  remote: ssh://git@multi-access.de/scxml.git
+  revision: d4277d2cbb603971ccb18e4ee0b84cb59c43c3f2
+  branch: jessica
+  specs:
+    MINT-scxml (1.0.0)
+      MINT-statemachine (~> 1.2.2)
+
+GIT
+  remote: ssh://git@multi-access.de/statemachine.git
+  revision: 17ddd123dfb9c3fed6de17546ae5a39291e5fdde
+  branch: jessica
+  specs:
+    MINT-statemachine (1.2.2)
+
+GEM
+  remote: http://rubygems.org/
+  remote: http://gems.rubyforge.org/
+  remote: http://gems.github.com/
+  specs:
+    addressable (2.2.6)
+    cassowary (1.0.0)
+    dm-core (0.10.2)
+      addressable (~> 2.1)
+      extlib (~> 0.9.14)
+    dm-rinda-adapter (0.1.0)
+      dm-core (~> 0.10.2)
+    extlib (0.9.15)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  MINT-core!
+  MINT-scxml!
+  MINT-statemachine!

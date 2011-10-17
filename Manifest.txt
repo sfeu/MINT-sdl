@@ -1,9 +1,11 @@
+.autotest
+.gemtest
 History.txt
+MINT-sdl.gemspec
 Manifest.txt
 README.txt
 Rakefile
 bin/mint-sdl-sound
-MINT-sdl.gemspec
 lib/MINT-sdl.rb
 lib/MINT-sdl/sound.rb
 lib/MINT-sdl/sounds/click.wav
