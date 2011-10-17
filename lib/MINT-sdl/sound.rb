@@ -1,7 +1,3 @@
-require 'rubygems'
-require 'MINT-core'
-require 'sdl'
-
 include MINT
 
 class SoundAgent < Agent
@@ -33,7 +29,7 @@ class SoundAgent < Agent
    def play_windup(result)
      SDL::Mixer.play_channel(0, @windup, 0)     
    end
-	
+
 
 end
 
