@@ -2,3 +2,6 @@
 
 * First version
 
+=== 1.0.1 / 2011-11-01
+
+* fixed wrong dependency to MINT-core
