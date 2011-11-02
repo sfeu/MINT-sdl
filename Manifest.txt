@@ -1,9 +1,9 @@
-.autotest
-.gemtest
+Gemfile
+Gemfile.lock
 History.txt
 MINT-sdl.gemspec
 Manifest.txt
-README.txt
+README.rdoc
 Rakefile
 bin/mint-sdl-sound
 lib/MINT-sdl.rb

@@ -6,17 +6,20 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Sebastian Feuerstack}]
-  s.date = %q{2011-10-17}
-  s.description = %q{}
+  s.date = %q{2011-11-02}
+  s.description = %q{Multimodal Interaction Framework sound support
+
+Implements an agent that offers sound support.}
   s.email = [%q{Sebastian@Feuerstack.org}]
   s.executables = [%q{mint-sdl-sound}]
-  s.extra_rdoc_files = [%q{History.txt}, %q{Manifest.txt}, %q{README.txt}]
-  s.files = [%q{History.txt}, %q{Manifest.txt}, %q{README.txt}, %q{Rakefile}, %q{bin/mint-sdl-sound}, %q{MINT-sdl.gemspec}, %q{lib/MINT-sdl.rb}, %q{lib/MINT-sdl/sound.rb}, %q{lib/MINT-sdl/sounds/click.wav}, %q{lib/MINT-sdl/sounds/click1.wav}, %q{lib/MINT-sdl/sounds/plop.wav}, %q{lib/MINT-sdl/sounds/plop2.wav}, %q{lib/MINT-sdl/sounds/windup.wav}, %q{lib/MINT-sdl/sounds/zoom.wav}, %q{test/test_MINT-sdl.rb}, %q{.gemtest}]
+  s.extra_rdoc_files = [%q{History.txt}, %q{Manifest.txt}]
+  s.files = [%q{Gemfile}, %q{Gemfile.lock}, %q{History.txt}, %q{MINT-sdl.gemspec}, %q{Manifest.txt}, %q{README.rdoc}, %q{Rakefile}, %q{bin/mint-sdl-sound}, %q{lib/MINT-sdl.rb}, %q{lib/MINT-sdl/sound.rb}, %q{lib/MINT-sdl/sounds/click.wav}, %q{lib/MINT-sdl/sounds/click1.wav}, %q{lib/MINT-sdl/sounds/plop.wav}, %q{lib/MINT-sdl/sounds/plop2.wav}, %q{lib/MINT-sdl/sounds/windup.wav}, %q{lib/MINT-sdl/sounds/zoom.wav}, %q{test/test_MINT-sdl.rb}, %q{.gemtest}]
+  s.homepage = %q{http://www.multi-access.de}
   s.rdoc_options = [%q{--main}, %q{README.rdoc}]
   s.require_paths = [%q{lib}]
   s.rubyforge_project = %q{MINT-sdl}
   s.rubygems_version = %q{1.8.5}
-  s.summary = %q{}
+  s.summary = %q{Multimodal Interaction Framework sound support  Implements an agent that offers sound support.}
   s.test_files = [%q{test/test_MINT-sdl.rb}]
 
   if s.respond_to? :specification_version then

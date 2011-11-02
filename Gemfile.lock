@@ -1,45 +1,21 @@
-GIT
-  remote: ssh://git@multi-access.de/MINT-core.git
-  revision: 2b9e3d49b2e73ee073db9b7c0955ce7928963296
-  branch: master
-  specs:
-    MINT-core (0.0.1)
-      MINT-statemachine (~> 1.2.2)
-      cassowary (~> 1.0.0)
-      dm-rinda-adapter (~> 0.1.0)
-
-GIT
-  remote: ssh://git@multi-access.de/dm-rinda-adapter.git
-  revision: 70ecca0ae3e08f7221b71a90d863b001b7a1e1f3
-  branch: master
-  specs:
-    dm-rinda-adapter (0.1.0)
-      dm-core (~> 0.10.2)
-
-GIT
-  remote: ssh://git@multi-access.de/scxml.git
-  revision: b4bd51b59e510770dfbf39fb6913bca3720685f2
-  branch: master
-  specs:
-    MINT-scxml (1.0.0)
-      MINT-statemachine (~> 1.2.2)
-
-GIT
-  remote: ssh://git@multi-access.de/statemachine.git
-  revision: e5313b61ca7296f4a21ea8d00caef5ee6b55743c
-  branch: master
-  specs:
-    MINT-statemachine (1.2.2)
-
 GEM
   remote: http://rubygems.org/
   specs:
+    MINT-core (1.0.0)
+      MINT-statemachine (~> 1.2.2)
+      cassowary (~> 1.0.0)
+      dm-rinda-adapter (~> 0.1.0)
+    MINT-scxml (1.0.0)
+      MINT-statemachine (~> 1.2.3)
+    MINT-statemachine (1.2.3)
     addressable (2.2.6)
     bcrypt-ruby (2.1.4)
     cassowary (1.0.0)
     dm-core (0.10.2)
       addressable (~> 2.1)
       extlib (~> 0.9.14)
+    dm-rinda-adapter (0.1.2)
+      dm-core (~> 0.10.2)
     dm-types (0.10.2)
       bcrypt-ruby (~> 2.1.2)
       dm-core (~> 0.10.2)
@@ -65,11 +41,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  MINT-core!
-  MINT-scxml!
-  MINT-statemachine!
+  MINT-core (= 1.0.0)
+  MINT-scxml (= 1.0.0)
+  MINT-statemachine (= 1.2.3)
   dm-core (= 0.10.2)
-  dm-rinda-adapter!
+  dm-rinda-adapter (= 0.1.2)
   dm-types (= 0.10.2)
   eventmachine (= 0.12.10)
   hoe (= 2.9.6)
